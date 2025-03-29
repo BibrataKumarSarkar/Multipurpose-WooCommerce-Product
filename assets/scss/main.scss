@@ -1,0 +1,55 @@
+/*
+Theme Name: Glee - Multipurpose WooCommerce HTML Template
+Author: bdevs
+Support: nasir.chalo@gmail.com
+Description: Multipurpose WooCommerce HTML Template
+Version: 1.0
+*/
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. Header
+3. Slider
+4. Banner
+5. Product
+6. Feature
+7. Testimonial
+8. Blog
+9. Widget
+10. Footer
+11. Cta
+12. About
+13. Team
+14. Contact
+15. Sections Helper
+16. Category
+17. Support
+18. Home Page 2
+19. Home Page 3
+20. Home Page 4
+*/
+/*--
+    - Mixins
+-----------------------------------------*/
+@import 'variables';
+@import 'mixins';
+@import 'common';
+@import 'overlay';
+@import 'mobile-menu';
+@import 'header';
+@import 'slider';
+@import 'sections';
+@import 'banner';
+@import 'product';
+@import 'feature';
+@import 'testimonial';
+@import 'blog';
+@import 'widgets';
+@import 'footer';
+@import 'cta';
+@import 'home-page-2';
+@import 'home-page-3';
+@import 'home-page-4';
+@import 'about';
+@import 'team';
+@import 'contact';

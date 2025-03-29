@@ -1,0 +1,118 @@
+/* 14. Contact */
+.contact-info {
+	background: #fbfbfb;
+	padding: 50px 30px;
+	text-align: center;
+	margin-bottom: 30px;
+	border: 2px solid #fbfbfb;
+	@include transition(0.3s);
+	.icon {
+		box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+		width: 80px;
+		height: 80px;
+		border-radius: 30px;
+		text-align: center;
+		line-height: 80px;
+		margin: 0 auto 30px;
+		@include transition(0.3s);
+	}
+
+	.details {
+		h4 {
+			color: #222222;
+			font-size: 20px;
+			margin-bottom: 15px;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			li {
+				display: inline-block;
+				color: #565872;
+				font-size: 16px;
+				line-height: 30px;
+			}
+		}
+	}
+}
+
+.contact-info.active{
+	border-color: #a3bbc8;
+	.icon{
+		background: #a3bbc8;
+	}
+}
+
+.contact-form-wrap {
+	.form-group {
+		position: relative;
+		margin-bottom: 25px;
+	}
+
+	input,
+	textarea {
+		width: 100%;
+		padding: 15px 50px 15px 30px;
+		background: #fafafa;
+		color: #565872;
+		font-size: 18px;
+		border-radius: 3px;
+		border: 0;
+		@include transition(0.3s);
+		@include placeholder() {
+			color: #565969;
+			@include transition(0.3s);
+		}
+
+		&:focus {
+			color: #222;
+			@include placeholder() {
+				opacity: 0;
+			}
+
+			~ .form-icon {
+				color: $theme-color-3;
+			}
+		}
+	}
+
+	textarea {
+		min-height: 145px;
+		resize: none;
+	}
+
+	.form-icon {
+		position: absolute;
+		right: 30px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.textarea-icon {
+		transform: translateY(0);
+		top: 15px;
+	}
+
+
+	.btn {
+		padding: 18px 45px;
+		line-height: 1;
+		text-transform: uppercase;
+		color: #fff;
+		background: #a3bbc8;
+		border-color: #a3bbc8;
+		&:hover{
+			background: $theme-color-3;
+			border-color: $theme-color-3;
+			color: #fff;
+		}
+	}
+}
+
+.contact-map {
+	height: 340px;
+	width: 100%;
+}

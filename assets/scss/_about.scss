@@ -1,0 +1,39 @@
+/* 12. About */
+.about-thumb{
+	img{
+		width: 100%;
+	}
+}
+
+.about-content{
+	.about-info{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin-bottom: 25px;
+		.num{
+			font-size: 140px;
+			font-weight: 700;
+			color: #a3bbc8;
+			margin-right: 30px;
+			line-height: 1;
+		}
+		.text{
+			font-size: 16px;
+			line-height: 30px;
+			color: #243f4d;
+		}
+	}
+	h4{
+		font-family: $DM;
+		font-weight: 700;
+		font-size: 36px;
+		color: #243f4d;
+	}
+	p{
+		font-size: 16px;
+		line-height: 30px;
+		color: #243f4d;
+		margin-bottom: 0;
+	}
+}

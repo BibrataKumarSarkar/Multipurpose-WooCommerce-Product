@@ -1,0 +1,157 @@
+/* 4. Banner */
+.banner-spacing {
+	padding: 0 55px;
+	@include mq(xs){
+		padding: 0 15px;
+	}
+	@include cmq(320px,425px){
+		padding: 0;
+	}
+}
+
+.banner-wrap {
+	position: relative;
+
+	&:hover{
+		.banner-thumb{
+			img{
+				transform: scale(1.05);
+			}
+		}
+	}
+
+	.banner-thumb {
+		overflow: hidden;
+		img{
+			width: 100%;
+			@include transition(0.3s);
+		}
+	}
+
+	.banner-content {
+		position: absolute;
+		left: 0;
+		top: 0;
+		padding: 60px 50px;
+		width: 100%;
+		@include mq(xl){
+			padding: 30px;
+		}
+		@include mq(xs){
+			padding: 30px;
+		}
+		@include cmq(320px,425px){
+			padding: 15px;
+		}
+
+		h4 {
+			font-size: 35px;
+			@include mq(xl){
+				font-size: 24px;
+			}
+			@include mq(xs){
+				font-size: 24px;
+			}
+
+			a {
+				color: #fff;
+
+				&:hover {
+					color: #013f19;
+				}
+			}
+		}
+
+		.read-more {
+			a {
+				display: inline-block;
+				width: 33px;
+				height: 33px;
+				line-height: 35px;
+				text-align: center;
+				font-size: 14px;
+				background: #fff;
+				color: $theme-color;
+				border-radius: 50%;
+				box-shadow: 0 0 0 6px _rgba($theme-color, 0.2);
+
+				&:hover {
+					background: $theme-color;
+					color: #fff;
+					box-shadow: 0 0 0 6px _rgba(#fff, 0.2);
+				}
+			}
+		}
+	}
+	.small-content{
+		padding: 30px;
+		@include mq(xl){
+			padding: 15px;
+		}
+		@include mq(xs){
+			padding: 15px;
+		}
+		h4 {
+			font-size: 24px;
+			@include mq(xl){
+				font-size: 18px;
+			}
+			@include mq(xs){
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+.banner-wrap-2 {
+	position: relative;
+
+	&:hover{
+		.banner-thumb{
+			img{
+				transform: scale(1.05);
+			}
+		}
+	}
+
+	.banner-thumb {
+		overflow: hidden;
+		img{
+			width: 100%;
+			@include transition(0.3s);
+		}
+	}
+
+	.banner-content {
+		position: absolute;
+		left: 0;
+		top: 20px;
+		padding: 20px 30px;
+		width: 100%;
+		@include mq(xl){
+			padding: 30px;
+		}
+		@include mq(xs){
+			padding: 30px;
+		}
+		@include cmq(320px,425px){
+			padding: 15px;
+		}
+
+		h4 {
+			font-size: 24px;
+
+			a {
+				color: #262626;
+
+				&:hover {
+					color: $theme-color-2;
+				}
+			}
+		}
+	}
+	.content-align-center{
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}

@@ -1,0 +1,128 @@
+/* 13. Team */
+.team-text {
+	h4 {
+		color: #243f4d;
+		font-size: 36px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 30px;
+		color: #243f4d;
+		margin-bottom: 0;
+	}
+
+	.read-more {
+		display: inline-block;
+		padding: 18px 20px 18px 28px;
+		color: #fff;
+		font-size: 15px;
+		font-weight: 500;
+		margin-top: 32px;
+		border: 2px solid #a3bbc8;
+		text-transform: capitalize;
+		background: #a3bbc8;
+		border-radius: 10px;
+
+		&:hover {
+			background: #243f4d;
+			border-color: #243f4d;
+			color: #fff;
+		}
+
+		i {
+			margin-left: 20px;
+		}
+	}
+}
+
+.team-wrap {
+	position: relative;
+	z-index: 1;
+
+	&:hover {
+		.thumb {
+			img {
+				transform: scale(1.05);
+			}
+		}
+	}
+
+	.thumb {
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			@include transition(0.3s);
+		}
+	}
+
+	.content {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		transform: translateY(50%);
+		background: #fff;
+		z-index: 2;
+		padding: 30px 25px;
+		box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+		width: 90%;
+		@include mq(md) {
+			padding: 30px 20px;
+		}
+		@include cmq(320px, 425px) {
+			padding: 30px 10px;
+			width: 95%;
+		}
+
+		.team-author {
+			-ms-flex-preferred-size: 0;
+			flex-basis: 0;
+			-ms-flex-positive: 1;
+			flex-grow: 1;
+			max-width: 100%;
+
+			h4 {
+				color: #436372;
+				font-size: 22px;
+				margin-bottom: 10px;
+			}
+
+			span {
+				display: inline-block;
+				color: #565872;
+				font-size: 16px;
+			}
+		}
+
+		.team-links {
+			width: 35%;
+
+			a {
+				display: inline-block;
+				margin-right: 5px;
+				width: 40px;
+				height: 40px;
+				line-height: 40px;
+				color: #888888;
+				background: #f6f6f6;
+				border-radius: 50%;
+				text-align: center;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				&:hover {
+					color: #fff;
+					background: $theme-color-3;
+				}
+			}
+		}
+	}
+}
